@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://yeonnportfolio-db.cz6y2u82kds4.ap-northeast-2.rds.amazonaws.com:3306/yeonnportfolio?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: kite
+    password: Cin15232618!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none # ?? ?? ???? create
+    show-sql: true # Hibernate SQL ?? ?? ??
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  h2:
+    console:
+      enabled: false # H2 ?? ????
